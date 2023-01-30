@@ -1,0 +1,23 @@
+insert into emp1 values(101,'Alien',"Saturn",0,'1999-01-01',111111,'Data Scientist');
+
+
+create procedure readEmp
+as
+select * from emp1 where emp_status = 0;
+;
+
+create procedure updateEmp
+as
+update emp1 set emp_address = 'Andheri' where emp_id = 105;
+;
+
+
+create procedure deleteEmp
+as
+delete from emp1 where emp_dob = '2000-03-14';
+;
+
+create procedure insertEmp
+as
+insert into emp1 values(106,'Uvw',"Kalyan",1,'1996-10-30',25000,'Intern');
+;
