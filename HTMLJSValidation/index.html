@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img-section">
+          
+        </div>
+
+        <div class="form-section">
+            <p class="heading-para">Welcome Back</p>
+            <h2 class="heading">Login to your account</h2>
+            <form class="login-form" name="form" id="loginForm">
+            <div class="input-group">
+                <div class="valid">
+                    <p>Email</p>
+                    <span id="email-error-message"></span>
+                </div>
+                <input class="form-input" id="email-field" placeholder="abc@example.com" type="text"name="email">
+            </div>
+
+            <div class="input-group">
+                <div class="valid">
+                    <p>Password</p>
+                    <span id="password-error-message"></span>
+                </div>
+                <input class="form-input" id="pwd-field" placeholder="Password" type="password" name="password">
+            </div>
+               
+                
+                <br>
+                <div class="remember-forgot">
+
+                    <div><input class="chkbox" type="checkbox" id="remember"><label class="chkbox-label" for="remember"> Remember me</label></div>
+                
+                   
+                  <div class="forgot">
+                    <a class="links" href="">Forgot Password?</a>
+                  </div>
+                
+                </div>
+
+               <div class="login-section">
+                <button class="btn login-btn" type="submit" onclick="validate()">Login now</button>
+                <button class="btn login-google-btn"><img src="resources/images/GoogleLogo.svg" class="icon">Sign-in with Google</button>
+
+               </div>
+               <div class="join-free">
+                <p>Don't have an account?<span class="join-link"> Join free today</span></p>
+               </div>
+                     
+            </form>
+        </div>
+    </div>
+    
+
+<script src="valid.js"></script>
+</body>
+</html>
