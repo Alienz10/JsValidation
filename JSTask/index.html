@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+         
+            
+               <form class="form-section" id="empForm">
+                <div class="form-container">
+                    
+                    <div class="id-input input-group" id="input-area">
+                            <input type="number" class="form-input" placeholder="ID" id="emp-id">
+                            <p class="error-txt"></p>
+                    </div>
+                    <div class="name-input input-group" id="input-area">
+                            <input type="text" class="form-input" placeholder="Name" id="emp-name">
+                            <p class="error-txt"></p>
+                    </div>
+                    <div class="age-input input-group" id="input-area">
+                            <input type="number" class="form-input" placeholder="Age" id="emp-age">
+                            <p class="error-txt"></p>
+                    </div>
+                    <div class="Gender-input input-group" id="input-area">
+                        <div class="label">
+                                <select name="gender" class="form-input" id="emp-gender">
+                                    <option value="" selected disabled>Select Gender</option>
+                                    <option value="male" class="gender-select">Male</option>
+                                    <option value="female" class="gender-select">Female</option>
+                                </select>
+                                <p class="error-txt"></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="submit-btn">
+                        <button type="submit" class="btn add-btn">ADD</button>
+                    </div>
+                    
+                </div>
+             </form>
+            
+            
+            <div class="error-section">
+                <span class="error-msg"><p id="error-area"></p></span>
+            </div>
+            <div class="table-section">
+                <h2>Employee Details</h2>
+                <table class="table" id="emp-table">
+                   
+                </table>
+        </div>
+       
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
